@@ -37,11 +37,11 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="location.circle.fill" catalog="system"/>
                                             </button>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="right" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="8YT-EF-JY4">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="right" minimumFontSize="12" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8YT-EF-JY4">
                                                 <rect key="frame" x="50" y="0.0" width="258" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemFillColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="go"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FnA-uN-nLu">
                                                 <rect key="frame" x="318" y="0.99999999999999645" width="40" height="38.333333333333329"/>
@@ -52,6 +52,9 @@
                                                 <color key="tintColor" name="WeatherColor"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="magnifyingglass" catalog="system"/>
+                                                <connections>
+                                                    <action selector="searchButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uHQ-De-8ZQ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -118,6 +121,7 @@
                     <connections>
                         <outlet property="cityLabel" destination="KB0-Bg-mGY" id="lfX-Ex-nnm"/>
                         <outlet property="conditionImageView" destination="dUP-r9-dEk" id="Mvu-m1-FE2"/>
+                        <outlet property="searchTextField" destination="8YT-EF-JY4" id="64e-UR-ZfD"/>
                         <outlet property="temperatureLabel" destination="Cbx-fy-P9N" id="oVh-wg-Mik"/>
                     </connections>
                 </viewController>
