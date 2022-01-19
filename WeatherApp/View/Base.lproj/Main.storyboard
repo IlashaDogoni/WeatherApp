@@ -36,6 +36,9 @@
                                                 <color key="tintColor" name="WeatherColor"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="location.circle.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="locationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BhI-TS-frf"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="right" minimumFontSize="12" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8YT-EF-JY4">
                                                 <rect key="frame" x="50" y="0.0" width="258" height="40"/>
@@ -121,6 +124,7 @@
                     <connections>
                         <outlet property="cityLabel" destination="KB0-Bg-mGY" id="lfX-Ex-nnm"/>
                         <outlet property="conditionImageView" destination="dUP-r9-dEk" id="Mvu-m1-FE2"/>
+                        <outlet property="locationbutton" destination="wUA-Wb-bcZ" id="jhw-RM-dTx"/>
                         <outlet property="searchTextField" destination="8YT-EF-JY4" id="64e-UR-ZfD"/>
                         <outlet property="temperatureLabel" destination="Cbx-fy-P9N" id="oVh-wg-Mik"/>
                     </connections>
@@ -136,7 +140,7 @@
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="sun.max" catalog="system" width="128" height="124"/>
         <namedColor name="WeatherColor">
-            <color red="0.1215686351" green="0.20784312490000001" blue="0.21960783" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.12200000137090683" green="0.20800000429153442" blue="0.2199999988079071" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
